@@ -50,17 +50,17 @@ public class ArrShop {
 			aAvg[i]=Double.parseDouble(String.format("%.2f", (double)arASum[i]/arBSum.length));
 		}
 		
-		for(int i=0; i<bAvg.length;i++) {
+		for(int i=0; i<bAvg.length;i++) { //3
 			bAvg[i]=Double.parseDouble(String.format("%.2f", (double)arBSum[i]/arASum.length));
 		}
 		
 		avg =  Double.parseDouble(String.format("%.2f", (double)sum/(rLength*cLength)));
 		
-		for(int i=0; i<rLength;i++) {
-			for(int j=0; j<cLength; j++) {
-				result += arrName[i][j]+"매출액:"+arrIncome[i][j]+"만원\n"; 
-		
+		for(int i=0; i<rLength;i++) { //2
+			for(int j=0; j<cLength; j++) { //3
+				result += arrName[i][j]+"매출액:"+arrIncome[i][j]+"만원\n"; 		
 			}
+			
 			//연령별 매출액
 			result += arAName[i]+"총 매출액"+arASum[i]+"만원\n";
 			result += arAName[i]+"평균 매출액"+aAvg[i]+"만원\n";

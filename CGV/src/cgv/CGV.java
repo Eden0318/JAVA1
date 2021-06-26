@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class CGV {
 	public static void main(String[] args) {
 		String helloMsg = "♡어서오세요 CGV입니다.♡\n";
-		String menuMsg = "1.예매하기\n2.구매하기\n3.포인트조회\n4.나가기\n";
+		String menuMsg = "1.예매하기\n2.구매하기\n3.나가기\n4.포인트조회\n";
 		String ageMsg = "[청소년 구매 불가 상품]\n나이를 입력하세요\n";
 		String films = "1.라이온킹(08:00)\n2.스파이더맨(12:00)\n3.사일런스(23:00)[청소년관람불가]\n4.뒤로가기";
 		int choice = 0;
@@ -19,7 +19,7 @@ public class CGV {
 		while(true) {
 			t_check = true;
 			choice = Integer.parseInt(JOptionPane.showInputDialog(helloMsg+menuMsg));
-			if(choice == 4) break;
+			if(choice == 3) break;
 			// 잘못 입력했을 때 continue 
 			if(!(choice>=1 && choice<=3)) continue;
 			

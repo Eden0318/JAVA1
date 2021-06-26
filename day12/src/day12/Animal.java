@@ -30,6 +30,7 @@ public class Animal {
 		Animal pig = new Animal("¹è²Å","°î½Ä","²Ü²Ü",5);
 		Animal cat = new Animal("³ªºñ","»çÅÁ","¾ß¿Ë",2);
 		pig.sleep();
+		pig.eat();
 		cat.eat();
 	}
 

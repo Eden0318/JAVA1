@@ -10,7 +10,7 @@ public class Car {
 		
 	}
 	
-	public Car(int price, String color, String brand) {
+	public Car(int price, String color, String brand) { //생성자
 		this.price = price;
 		this.color = color;
 		this.brand = brand;
@@ -27,7 +27,7 @@ public class Car {
 	}
 	
 	void  showInfo() {
-		System.out.println(this);
+		
 		System.out.println("브랜드 : "+brand+"\n색상"+color+"\n가격"+price+"만원");
 	}
 	
@@ -38,8 +38,8 @@ public class Car {
 		//기본생성자는 클래스를 선언하면 자동으로 선언된다.
 		
 		Car momCar = new Car(9000,"Black","Benz");
-		Car dadyCar = new Car();
-		Car myCar = new Car();
+		Car dadyCar = new Car(5000,"white","bmw");
+		Car myCar = new Car(1000,"black","k5");
 		
 		momCar.showInfo();
 		dadyCar.showInfo();

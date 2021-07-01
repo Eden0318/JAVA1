@@ -47,15 +47,17 @@ public class MethodTask {
 
 	//정수를 한글로 바꾸는 메서드
 	
-	void changeToHangle(String data){
+	void changeToHangle(String data){ //1024
 		String hangle = "공일이삼사오육칠팔구";
 		String result = "";
 		
 		int num = Integer.parseInt(data);
-		for(int i=0; i<data.length();i++) {
+		for(int i=0; i<data.length();i++) {//4
 			result += hangle.charAt(num%10);
 			num/=10;
+			System.out.println(result);
 		}
+		
 		for(int i=data.length()-1; i>-1; i--) {
 			System.out.println(result.charAt(i));
 		}
@@ -65,10 +67,10 @@ public class MethodTask {
 	public static void main(String[] args) {
 		MethodTask m =new MethodTask();
 		
-		m.getSumFrom1(1);
-		m.getSumFrom1(12);
-		
-		m.divide(10,0);
+//		m.getSumFrom1(1);
+//		m.getSumFrom1(12);
+//		
+//		m.divide(10,0);
 		m.changeToHangle("1024");
 		
 	}

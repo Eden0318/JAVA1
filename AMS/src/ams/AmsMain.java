@@ -40,12 +40,11 @@ public class AmsMain {
 				break;
 			//목록보기 영역
 			case 4:
+				//show()메소드는 return이 있기 때문에 af.show()자체를 결과값이라고 한다.
 				JOptionPane.showMessageDialog(null, af.show());
 				break;
 			}
 		}
-		
-		
-	
+
 	}
 }

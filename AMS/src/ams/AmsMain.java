@@ -12,6 +12,7 @@ public class AmsMain {
 		String []arPlane = new String[5];
 		String insertMsg = "[추가하실 정보를 그대로 입력하세요(,포함)]\n"
 				+ "항공사, 항공기번호, 최대승객수(명), 출발지, 도착지";
+		String searchMsg = "검색하실 항공사를 입력하세요\n";
 		//절대경로 : 내 위치가 어디든지 찾아갈 수 있는 경로
 		//상대경로 : 내 위치에 따라서 변경되는 경로
 		String []menu = {"추가하기","검색하기","수정하기","삭제하기","목록보기"};
@@ -27,10 +28,11 @@ public class AmsMain {
 			//추가하기 영역
 			case 0:
 			arPlane = JOptionPane.showInputDialog(insertMsg).split(", ");
-			af.insert(arPlane);	
 				break;
 			//검색하기 영역	
 			case 1:
+				String keyword = JOptionPane.showInputDialog(searchMsg);
+				JOptionPane.showMessageDialog(null, af.search(keyword));	
 				break;
 			//수정하기 영역
 			case 2:
@@ -39,7 +41,7 @@ public class AmsMain {
 			case 3:
 				break;
 			//목록보기 영역
-			case 4:
+			case 4: 
 				//show()메소드는 return이 있기 때문에 af.show()자체를 결과값이라고 한다.
 				JOptionPane.showMessageDialog(null, af.show());
 				break;

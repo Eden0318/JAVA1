@@ -16,17 +16,15 @@ public class Car {
 	}
 
 
-	void teach() {
-		int cnt=0;
-		cnt++;
-		System.out.println(cnt);
+	int divide(int num1, int num2) {
+		int result = num1/num2;
+		return result;
+		
 	 }
 
 	public static void main(String[] args) {
 		Car momCar = new Car();
-		momCar.teach();
-		momCar.teach();
-		momCar.teach();
+		momCar.divide(4,2);
 		
 	}
 	

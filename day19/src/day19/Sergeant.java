@@ -1,23 +1,25 @@
 package day19;
 
-public class Sergeant extends Army {
+public class Sergeant extends Army{
 	
 	@Override
 	public void eat() {
-		// TODO Auto-generated method stub
-		super.eat();
-	}
-	
-	private void sleept() {
-		// TODO Auto-generated method stub
-
+		System.out.println("안먹고 PX");
 	}
 	
 	@Override
-	public void play() {
-		// TODO Auto-generated method stub
-		super.play();
+	public void sleep() {
+		System.out.println("하루종일 잔다");
 	}
+	
+	
+	@Override
+	public void play() {
+		System.out.println("하루종일 논다");
+	}
+	
+	
+	
 	
 	
 }

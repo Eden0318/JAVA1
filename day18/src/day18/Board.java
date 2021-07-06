@@ -6,3 +6,4 @@ public class Board {
 		new Tri().showArea(30, 15.9);
 	}
 }
+ 

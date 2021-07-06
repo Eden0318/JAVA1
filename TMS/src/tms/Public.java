@@ -1,10 +1,11 @@
 package tms;
-//pay():요금을 정산 할 수 있는 메서드
+	//pay():요금을 정산 할 수 있는 메서드
 	//showDestMsg(String destination) : 도착지 "도착지에 도착했습니다" 메세지 출력
 	//자식클래스 : 버스, 지하철
 	
 	//VIEW
 	//이용하실 대중교통을 선택하세요
+	//출발지는 랜덤
 	//도착지는 버튼으로 구현(optionDialog())
 	//출발지와 도착지가 같지 않도록 구현
 	//버스는 정방향만 가능
@@ -16,6 +17,6 @@ public abstract class Public {
 	
 	abstract int pay(int money);
 	abstract void showDestMsg(String destination);
-	abstract void go(int btnIndex);
+	abstract void go(int btnIndex, int money);//btnIndex는 arStation과 같다.
 
 }

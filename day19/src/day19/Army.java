@@ -3,33 +3,18 @@ package day19;
 public abstract class Army implements Soldier {
 
 	@Override
-	public void eat() {
-		// TODO Auto-generated method stub
-
-	}
+	public void eat() {}
 
 	@Override
-	public void work() {
-		// TODO Auto-generated method stub
-
-	}
+	public void work() {}
 
 	@Override
-	public void sleep() {
-		// TODO Auto-generated method stub
-
-	}
+	public void sleep() {}
 
 	@Override
-	public void salute() {
-		// TODO Auto-generated method stub
-
-	}
+	public void salute() {}
 
 	@Override
-	public void play() {
-		// TODO Auto-generated method stub
-
-	}
+	public void play() {}
 
 }

@@ -1,33 +1,30 @@
 package practice;
 
+import java.util.Scanner;
+
 public class Car {
-	int price;
-	String color;
-	String brand;
-	//int cnt=0;
-	
-	Car(){}
-
-
-	 public Car(int price, String color, String brand) {
-		this.price = price;
-		this.color = color;
-		this.brand = brand;
-	}
-
-
-	int divide(int num1, int num2) {
-		int result = num1/num2;
-		return result;
-		
-	 }
-
 	public static void main(String[] args) {
-		Car momCar = new Car();
-		momCar.divide(4,2);
 		
+		int choice = 0;
+		int answer = 4;
+		String result = "";
+		
+		
+		String q = "Q.다음 중 프로그래밍언어가 아닌 것은?\n"+
+				"1.JAVA\n"+"2.Python\n"+"3.C언어\n"+"4.망둥어";
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println(q);
+		choice = sc.nextInt();
+		result = (choice == answer ? "정답입니다" : choice>=1 && choice<=4? "삐빅오답":"?");
+		System.out.println(result);
+		
+		
+		
+		
+		
+	
+		
+	
 	}
-	
-	
-	
 }

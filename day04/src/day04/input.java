@@ -12,5 +12,6 @@ public class input {
 		name = sc.nextLine(); //sc.next()는 문자열값, name은 저장공간
 		System.out.println(name);
 		
+		
 	}
 }

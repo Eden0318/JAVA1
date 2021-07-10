@@ -6,8 +6,8 @@ public class AmsField {
 	//5개(항공사, 항공기번호, 최대승객수, 출발지, 도착지)의 특징을 가진 비행기 여러대
 	//한 행이 하나의 비행기에 대한 정보, 한 열이 그 주제.
 	String [][]arrPlane = new String[100][5]; //비행기 여러대
+	String result = "";
 	int cnt; //arrPlane의 몇번째 방?, 전역변수는 자동 초기화
-	int rLength = cnt; //100
 	int cLength = arrPlane[0].length;//5
 	
 	//추가하기
@@ -56,8 +56,10 @@ public class AmsField {
 	
 	//목록보기
 	String show() {
-		
-		String result = "항공사, 항공기번호, 최대승객수(명), 출발지, 도착지\n";
+		if(cnt==1) {
+			result="항공사, 항공기번호, 최대승객수(명), 출발지, 도착지\n";
+		}
+		int rLength = cnt; //100
 		
 		for (int i = 0; i < rLength+1; i++) {
 			result += "♥"; //새로운 비행기일때마다 하트가 붙는다.

@@ -44,13 +44,13 @@ public class Starbucks {
 	
 	public static void main(String[] args) {
 		Starbucks gangnam = new Starbucks();
-		Starbucks suwon = new Starbucks();
+
 		//cafe타입 - 인터페이스 - new Cafe()를 통해 주소값 전달
 		//new Cafe()라고 하는 이유는 인터페이스를 재정의하려고
 		//인터페이스 타입으로 받은 이유는 스타벅스의 지점마다 메뉴차이가 있으니까 전부 재정의 계속하려고
 		//재정의 된 걸로 sell한다.
 		
-		gangnam.registCafe(new Cafe() {
+		gangnam.registCafe(new Cafe() { //익명객체
 			
 			@Override
 			public void setMenu(String[] menu) {
@@ -73,35 +73,7 @@ public class Starbucks {
 			}
 		});
 		
-		
-		
-		/*
-		suwon.registCafe(new Cafe() {
-			
-			@Override
-			public void setMenu(String[] menu) {
-				System.out.println("수원메뉴 설정하기");
-				suwon.menu=menu;
-				
-			}
-			
-			@Override
-			public void sell(String choice) {
-				for (int i = 0; i < suwon.getMenu().length; i++) {
-					if(suwon.getMenu()[i].equals(choice)) {
-						suwon.income+=suwon.arPrice[i];
-					}
-				}
-				
-			}
-			
-			@Override
-			public String[] getMenu() {
-				System.out.println("수원메뉴출력하기");
-				return suwon.menu;
-			}
-		});
-		*/
+	
 		System.out.println("카푸치노 주문 완료");
 		System.out.println("현재수익 : "+gangnam.getIncome());
 		

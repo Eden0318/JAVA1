@@ -1,0 +1,75 @@
+package day23;
+
+import java.util.Scanner;
+
+public class Elevator extends Lift {
+
+	final int maxFloor=10;
+	final int minFloor=-3;
+	
+	
+	@Override
+	void up() {
+		floor++;
+		
+	}
+
+	@Override
+	void down() {
+		floor--;
+		
+	}
+
+	@Override
+	void start(int choice) {
+		if(choice < floor) {
+			for (int i = 0; i<floor-choice+i; i++) {
+				if(floor!=0) {
+					System.out.println(floor+"Ãþdowndowndonw");
+					try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {}
+				}
+				down();
+			}
+			stop();//for¹® Å»ÃâÇÏ°í µµÂøÇÏ´Â ¼ø°£
+		}else if(choice!=floor) { //if(choice>floor) ÀÌ·¸°Ô ¾²Áö ¸» °Í
+			for (int i =0 ; i < choice-floor+i; i++) {
+				if(floor!=0) {
+					System.out.println(floor+"Ãþupupup");
+				}
+				up();
+			}
+			stop();
+		}else {
+			System.out.println("°°Àº Ãþ ¼±ÅÃ ºÒ°¡");
+		}
+	}
+
+	
+	
+	@Override
+	void stop() {
+		System.out.println("¡ÜµµÂø¡Ü");
+		
+	}
+
+	@Override
+	void go() {
+		int choice=0;
+		String msg="";
+		while(true) {
+			msg="Ãþ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(ÇöÀçÃþ:"+floor+"Ãþ)";
+			System.out.println(msg);
+			choice=new Scanner(System.in).nextInt();
+			if(choice>maxFloor || choice<minFloor) {
+				System.out.println("B3ÃþºÎÅÍ 10Ãþ±îÁö¸¸ °¡´ÉÇÕ´Ï´Ù");
+			}else {
+				break;
+			}
+			start(choice);
+		}
+		
+	}
+	
+}

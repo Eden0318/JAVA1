@@ -4,6 +4,13 @@ public class Arr {
 	
 	public static void main(String[] args) {
 		String []arData= {"안녕","반가워","이름이","뭐니?"};
+
+			
+//		for (int i = 0; i < arData.length; i++) {
+//			System.out.println(arData[i]);
+//		}
+		
+		//String i 변수 선언, i라는 공간안에 값이 들어감
 		
 		for(String i:arData) {
 			System.out.println(i);

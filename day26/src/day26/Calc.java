@@ -20,7 +20,7 @@ public class Calc implements GInter<Double, Integer>{
 	public static void main(String[] args) {
 		Calc c = new Calc();
 		System.out.println(c.add(5.9, 12.23));
-		System.out.println(c.sub(5.9, 12));
+		System.out.println(c.sub(23.2, 12));
 		System.out.println(c.mul(5, 12));
 		
 	}

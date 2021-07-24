@@ -16,6 +16,6 @@ public class GTest2 {
 			result = null;
 		}
 		return result;
-		
+
 	}
 }

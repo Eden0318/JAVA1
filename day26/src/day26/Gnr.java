@@ -14,6 +14,9 @@ public class Gnr {
 		g2.setData(10);
 		System.out.println(g.getData());
 		System.out.println(g2.getData());
+		
+		
+		
 	}
 
 }

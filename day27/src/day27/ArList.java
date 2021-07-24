@@ -38,7 +38,7 @@ public class ArList {
 		System.out.println(list.size());
 		System.out.println(list2);
 		System.out.println("정렬 전:"+list);
-		 Collections.sort(list);
+		Collections.sort(list);
 		System.out.println("정렬 후:"+list);
 		Collections.reverse(list);
 		System.out.println("리버스:"+list);

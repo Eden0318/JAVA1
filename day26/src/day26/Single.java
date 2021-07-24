@@ -2,7 +2,7 @@ package day26;
 
 public class Single {
 	
-	//private으로 한 것은 밖에서 new 하지 말라는 것
+	//private으로 한 것은 밖에서 객체생성 하지 말라는 것
 	private Single() {
 		
 	}

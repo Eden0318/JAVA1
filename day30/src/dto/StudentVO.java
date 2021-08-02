@@ -3,11 +3,11 @@ package dto;
 public class StudentVO {
 	private String name;
 	private int age;
-	private int number;
-	private static int seq;
+	private int number; //1씩증가 번호는 자동부여, 번호는 내가 부여하는것이 아닌 순서대로 들어감
+	private static int seq; //new할때마다 초기화 되면 안되니까 static을 붙여줌
 	
 	public StudentVO() {
-		
+	
 	}
 	
 	public StudentVO(String name, int age) {
